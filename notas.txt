@@ -1,0 +1,26 @@
+elementos de referencia
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+INPUTS:
+https://developer.mozilla.org/es/docs/Web/HTML/Element/input
+
+documentacion para BEM
+https://en.bem.info/methodology/faq/#why-bem
+
+Pseudo-classes
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+
+Pseudoelementos
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements
+
+Combinadores: Hijo y Descendiente
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators
+
+
+https://fonts.google.com/icons?selected=Material+Icons
+https://fontawesome.com/
+https://fonts.google.com/
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
+
+Responsive design: media queries
+https://www.mydevice.io/#compare-devices

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- le dice al navegar el idioma de la pagina -->
+<html lang="es"> 
+<!--en head va todo lo importante para el navegador pero no es visual , librerias, css,dependencias, etc -->
+<head> 
+    <!-- permite ver la gran mayoria de caracteres especiales -->
+    <meta charset="UTF-8"> 
+    <!--meta da informacion al navegador y no es necesario cerrarla, permite ver comentarios en el momento de que el navegador realice la busquedad-->
+    <meta name="description" content="esta página te mostrara imagenes de gatos">
+    <!-- permite posicionamiento en la busquedad de los robots de los navegadores-->
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <!-- permite que la pagina sea responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo que carga en el navegador -->
+    <title>MI PAGINA</title> 
+    <!--ruta para agregar el css -->
+    <link rel="stylesheet" href="./css/style.css"> 
+</head>
+<body>
+    <!--existen etiquetas de contenido y etiquetas contenedoras(llevan mas etiquetas adentro nos ayudan a generar lo extructura)-->
+    <!--etiqueta contenedora-->
+    <header>
+        <!--barra de navegacion-->
+        <nav>
+            <ul class="main-nav">
+                <li class="main-nav__item"><a href="">HOME</a></li>
+                <li class="main-nav__item"><a href="">Cursos</a></li>
+                <li class="main-nav__item"><a href="">Instructores</a></li>
+                <li class="main-nav__item"><a href="">blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--area principal-->
+    <main>
+        <!--secciones dentro del main-->
+        <section>
+            <h1>soy el titulo</h1>
+            <div>
+                <p>este es un parrafo</p>
+            </div>
+            <!--articulos dentro de la seccion-->
+            <article>
+
+            </article>
+
+        </section>
+        <section>
+            <!--contenedor para imagenes-->
+            <figure>
+            <!--etiqueta de imagen-->
+            <img src="./pics/small.jpg"
+             alt="es una imagen de un gato blanco con ojos de diferente color">
+            <figcaption>
+                es una imagen de un gato
+            </figcaption>
+        </figure>
+        </section>
+        <section>
+            <video controls preload="auto">
+                <!--se agregan diferentes tipos de formato para cuando el navegador no reconosca algun formato-->
+                 <source src="./video/cat.mp4#t=3,9" />
+            </video>
+        </section>
+        <!--listas-->
+        <!--desordenada, trae puntos o bules-->
+        <ul>
+            <!--elementos de la lista-->
+            <li>manzana</li>
+        </ul>
+        <!--ordenada, salen numeradas-->
+        <ol></ol>
+
+    </main>
+    <!--pie de página-->
+    
+    <!--etiqueta de contenido parrafo-->
+    <p >texto</p>
+    <p  class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, ducimus similique. Ipsa ipsam iusto modi quibusdam provident obcaecati amet tempore nemo inventore, odit iure facere, fuga quae, ea distinctio suscipit.</p>
+    <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas obcaecati officia. Praesentium, exercitationem in laudantium ipsum obcaecati, quae laborum amet illo nam commodi sapiente ratione officia incidunt maiores repellendus?</p>
+        <!--etiqueta de contenido encabezados-->
+        <h1>Soy la lista del super</h1>
+        <ul>
+            <li>Frutas:</li>
+            <ol>
+              <li>peras</li>
+              <li>mangos</li>
+              <li>mora</li>
+              <li>guayaba</li>
+            </ol> 
+        </ul>
+        <ul>
+            <li>Carnes:</li>
+            <ol>
+              <li>entrepecho</li>
+              <li>chicharron</li>
+              <li>solomo</li>
+              <li>higado</li>
+            </ol>
+              
+        </ul>
+        <ul>
+            <li>Verduras:</li>
+            <ol>
+              <li>papas</li>
+              <li>yuca</li>
+              <li>tomate</li>
+              <a href="https://www.laylita.com/recetas/chifles-de-platano/" target="_blanck">
+              <li>platano verde</li> </a>
+            </ol>
+              
+        </ul>
+        
+        
+        <h2>titulo h2</h2>
+        <h3>titulo h3</h3>
+        <h4>titulo h4</h4>
+        <h5>titulo h5</h5>
+        <h6>titulo h6</h6>
+        <!--etiqueta ancla que ayuda a generar hipervinculos -->       
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">elementos de referencia</a>
+
+    <!--otro etiqueta contenedora -->
+    <div>
+
+    </div>
+    <!--formularios, en accion va la url del servidor-->
+    <form action="">
+        <label for="nombre">
+            <span>¿cual es tu nombre?</span>
+            <input type="text"id="nombre" placeholder="Ingresa nombre">
+        </label>
+        <label for="fecha-platzi">
+            <span>¿qué día iniciaste en platzi?</span>
+            <input type="date"id="fecha-platzi">
+        </label>
+        <label for="horario">
+            <span>¿En que horario estudias?</span>
+            <input type="time"id="horario">
+        </label>
+
+    </form>
+    <form action="">
+        <label for="hora">
+            <span>Hora</span>
+            <input type="time" id="hora" name="hora">
+        </label>
+        <label for="dia">
+            <span>día</span>
+            <input type="date" id="dia" name="dia">
+        </label>
+        <label for="semana">
+            <span>semana</span>
+            <input type="week" id="semana" name="semana">
+        </label>
+        <label for="mes">
+            <span>mes</span>
+            <input type="month" id="mes" name="mes">
+        </label>
+        <input type="submit">
+    </form>
+    <form action="">
+        <label for="calendario">
+            <span>calendario</span>
+            <input type="datetime-local" id="calendario" name="calendario">
+        </label>
+        <input type="submit">
+    </form> 
+    <form action="">
+        <label for="nombre">
+            <span>¿cual es tu nombre?</span>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+        </label>
+        <label for="correo">
+            <span>¿cual es tu correo?</span>
+            <input type="email" id="correo" name="correo" autocomplete="email" required>
+        </label>
+        <label for="pais">
+            <span>¿cual es tu pais?</span>
+            <input type="text" id="pais" name="pais" autocomplete="country" required>
+        </label>
+        <label for="cp">
+            <span>¿cual es tu codigo postal?</span>
+            <input type="text" id="cp" name="cp" autocomplete="postal-code" required>
+        </label>
+        <input type="submit">                          
+    </form>   
+    <form action="">
+        <select name="cursos" id="">
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Web Standards">Web Standards</option>
+        </select>      
+        <input type="submit">
+    </form>
+  
+          <!--manera correcta de utilizar un select-->
+          <input list="cursos">
+          <datalist id="cursos">
+              <option value="JavaScript"></option>
+              <option value="HTML"></option>
+              <option value="CSS3"></option>
+              <option value="Web Standards"></option>
+          </datalist>
+          <!--input se utiliza mas que todo para enviar informacion desde formularios-->
+    <input type="submit" value="nombre">
+<!--es más flexifle y tiene diferentes usos-->
+    <button type="submit">Enviar</button>
+
+</body>
+<footer>
+
+</footer>
+</html>

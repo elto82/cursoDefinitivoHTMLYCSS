@@ -1,0 +1,66 @@
+/*margin es el espacio por fuera de la caja, border la linea que define el elemento, padding estacio interno de la caja, content es el elemento que vamos a ver  */
+
+/*selector universal*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  height: 1000px;
+  border: 10px, solid, rgb(27, 17, 17);
+  padding: 20px, 35px;
+}
+
+.main-nav {
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+  background-color: #13a4a4;
+}
+.main-nav__item {
+  display: inline-block;
+}
+.main-nav__item a {
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+/*seudo clase definen el estilo de un estado */
+
+.main-nav__item a:hover {
+  color: blue;
+}
+.main-nav__item a:active {
+  color: red;
+}
+
+/*seudo elemento definen una parte especifica de un elemento*/
+
+.main-nav__item a::after {
+  content: " | ";
+}
+
+/* style for elemet*/
+
+p {
+  color: blue;
+  font-size: 25px;
+}
+
+/*style for class*/
+
+.parrafo {
+  color: rgb(17, 11, 8);
+}
+
+/* style for id*/
+
+#texto {
+  color: green;
+  font-size: 25px;
+}

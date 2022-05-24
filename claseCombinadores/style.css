@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h2 + p{
+    color: red;
+}
+
+h2 ~ p{
+    color: yellow;
+}
+
+div > p {
+    color: violet;
+
+}
+
+div p{
+    color: rgb(139, 30, 194);
+}
